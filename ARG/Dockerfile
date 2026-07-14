@@ -5,4 +5,7 @@ WORKDIR /app
 ARG course="docker"
 ARG trainer="sivakumar"
 ARG duration="10hrs"
+ENV couser=${course}\
+    trainer=${trainer}\
+    duration={duration}
 RUN echo "course: ${course} trainer: ${trainer} duration: ${duration}"
