@@ -9,3 +9,4 @@ ENV couser=${course}\
     trainer=${trainer}\
     duration={duration}
 RUN echo "course: ${course} trainer: ${trainer} duration: ${duration}"
+CMD ["sleep", "1000"]
