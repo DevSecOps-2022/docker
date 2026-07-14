@@ -4,3 +4,4 @@ WORKDIR /app
 ARG course="docker"
 ARG trainer="sivakumar"
 ARG duration="10hrs"
+RUN echo "course: ${course} trainer: ${trainer} duration: ${duration}"
