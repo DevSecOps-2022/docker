@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux: ${version:-9}
 RUN dnf install nginx -y
 WORKDIR /app
 ARG course="docker"
